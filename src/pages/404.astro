@@ -1,7 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ErrorNotFound from '../pages/modules/ErrorNotFound.astro'
 ---
 <Layout>
-	<ErrorNotFound/>
+	<div class="flex justify-center items-center px-6 mx-auto h-screen xl:px-0 dark:bg-gray-900">
+		<div class="absolute text-center xl:max-w-4xl z-10">
+			<span class="text-6xl font-bold sm:text-4xl lg:text-[300px]">
+				<span class="text-cyan-400">4</span><span class="text-fuchsia-400">0</span><span class="text-cyan-400">4</span>
+			</span>
+			<p class="mb-5 text-base font-normal text-amber-500 md:text-lg dark:text-gray-400">
+				Oops! Looks like you followed a bad link. If you think this is a problem
+				with us, please tell us.
+			</p>
+		</div>
+	</div>
 </Layout>
