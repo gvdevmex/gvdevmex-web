@@ -1,0 +1,20 @@
+---
+interface Props {
+  href?: string;
+  isSelect?: boolean;
+}
+
+const {href, isSelect} = Astro.props;
+---
+
+<a href={href} class:list={[
+    "block py-2 px-3 md:p-0 hover:text-pink-500 ", 
+    {
+      "text-amber-400": !isSelect,
+      "text-pink-400": isSelect
+    }
+  ]}
+  aria-current="page">
+  <slot/>
+</a>
+

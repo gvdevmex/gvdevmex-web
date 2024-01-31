@@ -1,0 +1,14 @@
+---
+interface Props {
+  isHorizontally?: boolean;
+}
+const {isHorizontally} = Astro.props;
+
+const classNanme = isHorizontally? "items-center sm:flex" : "relative border-s border-gray-200 dark:border-gray-700";
+---
+
+
+
+<ol class={classNanme}>
+  <slot/>
+</ol>
