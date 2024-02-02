@@ -5,59 +5,44 @@ import TimelineitemsV from  '../components/TimelineitemsV.astro';
 ---
 
 <Layout>
-  <div class="grid justify-center">
-		<div class="flex flex-col lg:flex-row justify-center gap-5 lg:gap-10 ">
+	<div class="flex justify-center items-center mx-auto gap-5 xl:w-8/12 ">
 
-		  <div class="flex justify-center justify-items-center py-5 lg:py-20 w-8/12 xl:w-5/12">
-				<img class="object-cover rounded-xl border-4 h-80 w-60" src="/perfil.jpg" alt="">
-			</div>
+    <div class="flex">
+			<img class="object-cover h-96 rounded-xl" src="/perfil.jpg" alt="">
+    </div>
 		  
-		  <div class="grid justify-center w-90">
-	      <div class="grid justify-between my-7 gap-5">
-  		    <h5 class="mb-2 text-4xl font-bold text-pink-400">Gustavo Vazquez</h5>
-	  	    <span class="mb-3 text-cyan-100">	Soy Full-Stack develoment.</span>
-		  		<span>Apacionado por en la creacion profecion y en constante capacitacion 
-			  	  de nueva tecnolog&iacute;as, tengo conocimiento en varios lenguajes de programacion, 
-			  	  en el sector que mas e trabajado en el sistema Bancarios, en el cual a analisidad los 
-			  	  rquerimientos de nuestros clientas para despues planter una solucion, considerando 
-			  	  su necesidades y el entorno (hardware y Software ) que tien nuestro cliente
+		<div class="grid w-full justify-between gap-5">
+	    <div class="grid justify-center text-center my-7 gap-5">
+  		   <h5 class="mb-2 text-4xl font-bold text-cyan-400">Mi nombre es <span class="text-pink-400">Gustavo V&aacute;zquez</span></h5>
+	  	    <span class="mb-3 text-2xl text-cyan-100">Full-Stack Developer.</span>
+	    </div>
+	  	
+	  	<span>Soy especialista en desarrollo de aplicaiones Bancarias en diferentes plantaforma.</span>
+	  	<span>He participando en numerosos proyecto colorando con ideas y soluciones para 
+	      llevar a cabo el desarrollo del proyecto que satifasga las necesidades del cliente.
+	  	</span>
+	  	<span>Soy un apacionado por el desarrollo de aplicaciones, para poder contribuir 
+	  	  con ideas y soluciones y llevar acabo el desarrollo con la mejor tecnologia 
+	  	  que se adacte a las necesidades del cliente, para ayudar a crecimiento de su
+	  	  negocio o 
+	  	</span>
 
-				  </span>
-  				<span class="font-medium text-cyan-400">Lejuages de Programacion</span>
-	  			<span>C, C++, C#, Java, Html, CSS, JavaScript, Tacl, Cobol, ActionScript, Shell, Visula Basic 6, PHP,
-		  		  TypeScipt, Flex
-			  	</span>
-				
-				  <span class="font-medium text-cyan-400">Base Datos</span>
-  				<span>Sql Server, Oracle, Mysql, Posgre, Informix, NotStop SQL, MongoDB</span>
-				
-	  			<span class="font-medium text-cyan-400">Sistema Operativos</span>
-		  		<span>Windowsm, Linux, Mac, Tandem (Guardian y OSS)</span>
-
-
-  				<span class="font-medium text-cyan-400">Framework</span>
-	  			<ul>
-		  		  <li>Java (Spring, Spring Boot, Spring Data, Spring Clound, EJB, JPA, Hibernate)</li>
-			  	  <li>JavaScript (Node Js, Deno, React)</li>
-				    <li></li>
-  				</ul>
-	      </div>
 
 	      <hr class="border-2 border-amber-400"/>
 
 	      <div class="bg-gray-800 rounded-xl grid p-5 gap-5 text-pink-400 w-12/12 lg:w-8/12 my-7">
-         <!--  <div class="flex gap-5"> -->
-	        <!--   <span class="material-symbols-outlined">phone_enabled</span> -->
-	      		<!-- <span class="text-cyan-400"> (+52) 477 580 62 75</span> -->
-        	<!-- </div> -->
+          <div class="flex gap-5">
+	          <span class="material-symbols-outlined">phone_enabled</span>
+	      		<span class="text-cyan-400"> (+52) 477 580 62 75</span>
+        	</div>
 	        <div class="flex gap-5">
 		        <span class="material-symbols-outlined">alternate_email</span> 
         		<span class="text-cyan-400">gvdevmex@gmail.com</span>
 	        </div>
-        	<!-- <div class="flex gap-5"> -->
-		       <!--  <span class="material-symbols-outlined">home</span> -->
-		      	<!-- <span class="text-cyan-400">Cto. Canteritas 174, Le&oacute;n Gto. 37100</span> -->
-        	<!-- </div> -->
+        	<div class="flex gap-5">
+		        <span class="material-symbols-outlined">home</span>
+		      	<span class="text-cyan-400">Le&oacute;n Guanajuato, Mex&iacute;co</span>
+        	</div>
 	        <div class="flex justify-end px-4 gap-5">
 	          <a href="https://github.com/gvdevmex">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -73,24 +58,6 @@ import TimelineitemsV from  '../components/TimelineitemsV.astro';
 		      </div>
 		    </div>
 		  </div>
-		</div>
-		<div class="flex mt-10 ms-10 w-8/12 xl:w-6/12">
-      <Timeline>
-        <TimelineitemsV head="Tesi" time="Agosto 2, 2017">
-          Lider Tecnico en el desarrollo de aplicaiones y soluciones  para <span class="font-bold">Citi Banamex</span>
-        </TimelineitemsV>
-        <TimelineitemsV head="ISI" time="Enero 1, 2010">
-          Analista y Desarrollador de aplicaciones para <span class="font-bold">Banco de Banio, Banorte, Agrovision
-          Banco Base</span>
-        </TimelineitemsV>
-        <TimelineitemsV head="QuarSoft" time="Julio 2, 2008">
-          Desarrollador Senior Java  utilizando <span class="font-bold">Frameword Spring y Hibernate</span>
-        </TimelineitemsV>
-        <TimelineitemsV head='UGT' time='Enero 1, 2006'>
-          Admistracion de redes y desarrollo de aplicaciones para la administracion de recursos  
-        </TimelineitemsV>
-      </Timeline>
-		</div>
 	</div>
 </Layout>
 

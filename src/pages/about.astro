@@ -1,0 +1,32 @@
+---
+import Timeline from '../components/Timeline.astro'
+import TimelineitemsV from '../components/TimelineitemsV.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+  <div class="flex gap-5 xl:gap-10">
+    <div class="flex flex-col gap-5 xl:gap-10">
+      <span class="text-4xl text-cyan-400">About</span>
+
+		<div class="flex mt-10 ms-10 w-8/12 xl:w-6/12">
+      <Timeline>
+        <TimelineitemsV head="Tesi" time="Agosto 2, 2017">
+          Lider Tecnico en el desarrollo de aplicaiones y soluciones  para <span class="font-bold">Citi Banamex</span>
+        </TimelineitemsV>
+        <TimelineitemsV head="ISI" time="Enero 1, 2010">
+          Analista y Desarrollador de aplicaciones para <span class="font-bold">Banco de Banio, Banorte, Agrovision
+          Banco Base</span>
+        </TimelineitemsV>
+        <TimelineitemsV head="QuarSoft" time="Julio 2, 2008">
+          Desarrollador Senior Java  utilizando <span class="font-bold">Frameword Spring y Hibernate</span>
+        </TimelineitemsV>
+        <TimelineitemsV head='UGT' time='Enero 1, 2006'>
+          Admistracion de redes y desarrollo de aplicaciones para la administracion de recursos  
+        </TimelineitemsV>
+      </Timeline>
+		</div>
+
+    </div>
+  </div>
+</Layout>
