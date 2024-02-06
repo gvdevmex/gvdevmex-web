@@ -1,31 +1,60 @@
 ---
+import Layout from '../layouts/Layout.astro'
 import Timeline from '../components/Timeline.astro'
 import TimelineitemsV from '../components/TimelineitemsV.astro'
-import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
 ---
 
 <Layout>
-  <div class="flex gap-5 xl:gap-10">
+  <div class="flex flex-col lg:flex-row justify-center items-center mx-auto gap-5 xl:w-8/12">
     <div class="flex flex-col gap-5 xl:gap-10">
       <span class="text-4xl text-pink-400">About</span>
 
-		<div class="flex mt-10 ms-10 w-8/12 xl:w-6/12">
-      <Timeline>
-        <TimelineitemsV head="Tesi" time="Agosto 2, 2017">
-          Lider Tecnico en el desarrollo de aplicaiones y soluciones  para <span class="font-bold">Citi Banamex</span>
-        </TimelineitemsV>
-        <TimelineitemsV head="ISI" time="Enero 1, 2010">
-          Analista y Desarrollador de aplicaciones para <span class="font-bold">Banco de Banio, Banorte, Agrovision
-          Banco Base</span>
-        </TimelineitemsV>
-        <TimelineitemsV head="QuarSoft" time="Julio 2, 2008">
-          Desarrollador Senior Java  utilizando <span class="font-bold">Frameword Spring y Hibernate</span>
-        </TimelineitemsV>
-        <TimelineitemsV head='UGT' time='Enero 1, 2006'>
-          Admistracion de redes y desarrollo de aplicaciones para la administracion de recursos  
-        </TimelineitemsV>
-      </Timeline>
-		</div>
+      <span class="text-2xl text-amber-400">Projectos</span>
+      <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5">
+        <Card className='bg-cyan-600'>
+          <span slot="body" class="text-lg text-amber-400">CitiBanamex</span>
+          <span slot="footer" class="text-4xl text-amber-400">CODI<span class="text-2xl text-amber-100"> Fase 1</span></span>
+        </Card>
+        <Card className='bg-violet-600'>
+          <span slot="body" class="text-lg text-amber-300">CitiBanamex</span>
+          <span slot="footer" class="text-4xl text-amber-400">CODI<span class="text-2xl text-amber-100"> Fase 2</span></span>
+        </Card>
+        <Card className='bg-pink-500'>
+          <span slot="body" class="text-lg text-amber-100">CitiBanamex</span>
+          <span slot="footer" class="text-4xl text-amber-100">Portabilidad Nomina</span>
+        </Card>
+        <Card className='bg-rose-500'>
+          <span slot="body" class="text-lg text-amber-100">CitiBanamex</span>
+          <span slot="footer" class="text-4xl text-amber-100">Ampliado</span>
+        </Card>
+        <Card>
+          <span slot="body" class="text-lg text-amber-100">CitiBanamex</span>
+          <span slot="footer" class="text-4xl text-amber-100">CUT</span>
+        </Card>
+        <Card className='bg-orange-400'>
+          <span slot="body" class="text-lg text-amber-100">CitiBanamex</span>
+          <span slot="footer" class="text-4xl text-amber-100">CODI Notificacion</span>
+        </Card>
+      </div>
+
+  		<div class="flex mt-10 ms-10 w-8/12 xl:w-6/12">
+        <Timeline>
+          <TimelineitemsV head="Tesi" time="Agosto 2, 2017">
+            Lider Tecnico en el desarrollo de aplicaiones y soluciones  para <span class="font-bold">Citi Banamex</span>
+          </TimelineitemsV>
+          <TimelineitemsV head="ISI" time="Enero 1, 2010">
+            Analista y Desarrollador de aplicaciones para <span class="font-bold">Banco de Banio, Banorte, Agrovision
+            Banco Base</span>
+          </TimelineitemsV>
+          <TimelineitemsV head="QuarSoft" time="Julio 2, 2008">
+            Desarrollador Senior Java  utilizando <span class="font-bold">Frameword Spring y Hibernate</span>
+          </TimelineitemsV>
+          <TimelineitemsV head='UGT' time='Enero 1, 2006'>
+            Admistracion de redes y desarrollo de aplicaciones para la administracion de recursos  
+          </TimelineitemsV>
+        </Timeline>
+	  	</div>
 
     </div>
   </div>

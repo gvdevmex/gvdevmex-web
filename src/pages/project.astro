@@ -1,18 +1,39 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from '../layouts/Layout.astro'
+import Timeline from '../components/Timeline.astro'
+import TimelineitemsV from '../components/TimelineitemsV.astro'
+import Card from '../components/Card.astro'
 ---
 
 <Layout>
-	<div class="flex justify-center items-center px-6 mx-auto h-screen xl:px-0">
-		<div class="absolute text-center xl:max-w-4xl gap-10">
-			<span class="text-4xl font-bold sm:text-3xl lg:text-8xl">
-				<span class="text-cyan-400">Pages </span><span class="text-fuchsia-400">under </span><span class="text-cyan-400">Construction</span>
-			</span>
-			<p class="mb-5 text-base font-normal text-amber-500 md:text-lg dark:text-gray-400">
-				Oops! Looks like you followed a bad link. If you think this is a problem
-				with us, please tell us.
-			</p>
-		</div>
-	</div>
-</Layout>
+  <div class="flex flex-col lg:flex-row justify-center items-center mx-auto gap-5 xl:w-8/12">
+    <div class="flex flex-col gap-5 xl:gap-10">
+      <h1 class="text-4xl text-pink-400">Projectos</h1>
 
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <Card title='CODI' subTitle='Fase 2' className='bg-cyan-600'>
+          <span slot="body" class="opacity-100"> <span class="font-bold">Cobro Digital</span>, es una plataforma de Banco de Mexico para facilitar las transacciones de pago y cobro
+            a trav&eacute;s de transferencias electr&oacute;nicas, de forma r&aacute;pida, segura y eficiente,
+            a trav&eacute;s de tel&eacutefonos m&oacuteviles.
+          </span>
+          <span slot="footer" class="text-amber-400">CitiBanamex</span>
+        </Card>
+        <Card title='CODI' subTitle='Fase 1' className='bg-violet-600'>
+          <span slot="body"> <span class="font-bold">Cobro Digital</span>, es una plataforma de Banco de Mexico para facilitar las transacciones de pago y cobro
+            a trav&eacute;s de transferencias electr&oacute;nicas, de forma r&aacute;pida, segura y eficiente,
+            a trav&eacute;s de tel&eacutefonos m&oacuteviles.
+          </span>
+          <span slot="footer" class="text-cyan-400">CitiBanamex</span>
+        </Card>
+        <Card title='Portabilidad de Nomina' className='bg-pink-600'>
+          <span slot="body">Es para transferir tu sueldo, pension y otras prestaciones, desde la cuenta en la que 
+          te depositan tu salario, al banco que prefieras</span>
+          <span slot="footer" class="text-cyan-400">CitiBanamex</span>
+        </Card>
+        <Card title='' className='bg-rose-500'>
+
+        </Card>
+      </div>
+    </div>
+  </div>
+</Layout>
