@@ -8,11 +8,23 @@ import Card from '../components/Card.astro'
 <Layout>
   <div class="flex flex-col lg:flex-row justify-center items-center mx-auto gap-5 xl:w-8/12">
     <div class="flex flex-col gap-5 xl:gap-10">
-      <span class="text-4xl text-pink-400">About</span>
+      <h1 class="text-4xl text-pink-400">About</h1>
 
-      <span class="text-2xl text-amber-400">Projectos</span>
+      <div class="flex flex-col gap-5">
+        <p class="text-4xl text-cyan-400">Mi nombre es Gustavo Vazquez, soy Full-Stack Developer.</p>
+        <p>Soy Desarrollador de aplicacion, especilizado en la aplicaiones Banacarias en diferentes 
+          sectores, actualmente en el modulo de transacciones interbancarias SPEI, tambien en participado 
+          en otros proyectos de cartera de creditos de consumo e hipotecarios, con diferentes tecnologias
+          de acuerdo a las necesaidades del cliente (Bancos).
+        </p>
+        <p>
+          Los Bancos en los que e podido participar en CitiBanamex, Banco del Bajio, Banco Base, Banorte, etc.
+        </p>
+      </div>
+
+      <h2 class="text-2xl text-amber-400">Projectos</h2>
       <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5">
-        <Card className='bg-cyan-600'>
+        <Card className='bg-teal-600'>
           <span slot="body" class="text-lg text-amber-400">CitiBanamex</span>
           <span slot="footer" class="text-4xl text-amber-400">CODI<span class="text-2xl text-amber-100"> Fase 1</span></span>
         </Card>

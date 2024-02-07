@@ -11,27 +11,86 @@ import Card from '../components/Card.astro'
       <h1 class="text-4xl text-pink-400">Projectos</h1>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <Card title='CODI' subTitle='Fase 2' className='bg-cyan-600'>
-          <span slot="body" class="opacity-100"> <span class="font-bold">Cobro Digital</span>, es una plataforma de Banco de Mexico para facilitar las transacciones de pago y cobro
-            a trav&eacute;s de transferencias electr&oacute;nicas, de forma r&aacute;pida, segura y eficiente,
-            a trav&eacute;s de tel&eacutefonos m&oacuteviles.
-          </span>
-          <span slot="footer" class="text-amber-400">CitiBanamex</span>
-        </Card>
-        <Card title='CODI' subTitle='Fase 1' className='bg-violet-600'>
+        <Card title='CODI' subTitle='Fase 1' className='bg-teal-600'>
           <span slot="body"> <span class="font-bold">Cobro Digital</span>, es una plataforma de Banco de Mexico para facilitar las transacciones de pago y cobro
             a trav&eacute;s de transferencias electr&oacute;nicas, de forma r&aacute;pida, segura y eficiente,
             a trav&eacute;s de tel&eacutefonos m&oacuteviles.
           </span>
-          <span slot="footer" class="text-cyan-400">CitiBanamex</span>
+          <div slot="footer" class="flex w-full justify-center gap-5">
+            <span class="text-amber-200">Java</span>
+            <span class="text-amber-200">C</span>
+            <span class="text-amber-200">Cobol</span>
+            <span class="text-amber-200">TACL</span>
+            <span class="w-full text-end justify-end text-amber-400 font-bold">CitiBanamex</span>
+          </div>
         </Card>
-        <Card title='Portabilidad de Nomina' className='bg-pink-600'>
+        
+        <Card title='CODI' subTitle='Fase 2' className='bg-violet-600'>
+          <span slot="body" class="opacity-100"> <span class="font-bold">Cobro Digital</span>, es una plataforma de Banco de Mexico para facilitar las transacciones de pago y cobro
+            a trav&eacute;s de transferencias electr&oacute;nicas, de forma r&aacute;pida, segura y eficiente,
+            a trav&eacute;s de tel&eacutefonos m&oacuteviles.
+          </span>
+          <div slot="footer" class="flex w-full justify-center gap-5">
+            <span class="text-amber-200">Java</span>
+            <span class="text-amber-200">C</span>
+            <span class="text-amber-200">Cobol</span>
+            <span class="text-amber-200">TACL</span>
+            <span class="w-full text-end justify-end text-amber-400 font-bold">CitiBanamex</span>
+          </div>
+        </Card>
+        
+        <Card title='Portabilidad de Nomina' className='bg-pink-500'>
           <span slot="body">Es para transferir tu sueldo, pension y otras prestaciones, desde la cuenta en la que 
-          te depositan tu salario, al banco que prefieras</span>
-          <span slot="footer" class="text-cyan-400">CitiBanamex</span>
+            te depositan tu salario, al banco que prefieras
+          </span>
+          <div slot="footer" class="flex w-full justify-center gap-5">
+            <span class="text-amber-200">Java</span>
+            <span class="text-amber-200">C</span>
+            <span class="text-amber-200">Cobol</span>
+            <span class="text-amber-200">TACL</span>
+            <span class="w-full text-end justify-end text-amber-400 font-bold">CitiBanamex</span>
+          </div>
         </Card>
-        <Card title='' className='bg-rose-500'>
 
+        <Card title='Ampliado' className='bg-rose-500'>
+          <span slot="body">
+            Se creo un nuevo componente para la conexion con SPEI para las transferencias de CODI, esto involucro 
+            crear replicar el funcionamiento de la recepcion e envio de la operacion actual
+          </span>
+          <div slot="footer" class="flex w-full justify-center gap-5">
+            <span class="text-amber-200">Java</span>
+            <span class="text-amber-200">C</span>
+            <span class="text-amber-200">Cobol</span>
+            <span class="text-amber-200">TACL</span>
+            <span class="w-full text-end justify-end text-amber-400 font-bold">CitiBanamex</span>
+          </div>
+        </Card>
+        
+        <Card title='CUT'>
+          <span slot="body">
+            Se creo un nuevo componente para la conexion con SPEI para las transferencias de CUT, esto involucro 
+            crear replicar el funcionamiento de la recepcion e envio de la operacion actual
+          </span>
+          <div slot="footer" class="flex w-full justify-center gap-5">
+            <span class="text-amber-200">Java</span>
+            <span class="text-amber-200">C</span>
+            <span class="text-amber-200">Cobol</span>
+            <span class="text-amber-200">TACL</span>
+            <span class="w-full text-end justify-end text-amber-400 font-bold">CitiBanamex</span>
+          </div>
+        </Card>
+
+        <Card title='CODI Notificacion' className='bg-orange-400'>
+          <span slot="body">Se agrego la funcionalidad de enviar notificaciones al cliente cuando se realiza
+            un transferencia de tipo de pago CODI para que el ordenante y beneficiario les llegara en la notificaciones 
+          </span>
+          <div slot="footer" class="flex w-full justify-center gap-5">
+            <span class="text-amber-200">Java</span>
+            <span class="text-amber-200">C</span>
+            <span class="text-amber-200">Cobol</span>
+            <span class="text-amber-200">TACL</span>
+            <span class="w-full text-end justify-end text-amber-400 font-bold">CitiBanamex</span>
+          </div>
         </Card>
       </div>
     </div>
