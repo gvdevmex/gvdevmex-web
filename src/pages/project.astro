@@ -11,7 +11,7 @@ import Card from '../components/Card.astro'
       <h1 class="text-4xl text-pink-400">Projectos</h1>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <Card title='CODI' subTitle='Fase 1' className='bg-teal-600'>
+        <Card title='CODI' subTitle='Fase 1' classCard='bg-teal-600' classTitle='text-gray-700' classSubTitle='text-gray-700'>
           <span slot="body"> <span class="font-bold">Cobro Digital</span>, es una plataforma de Banco de Mexico para facilitar las transacciones de pago y cobro
             a trav&eacute;s de transferencias electr&oacute;nicas, de forma r&aacute;pida, segura y eficiente,
             a trav&eacute;s de tel&eacutefonos m&oacuteviles.
@@ -25,7 +25,7 @@ import Card from '../components/Card.astro'
           </div>
         </Card>
         
-        <Card title='CODI' subTitle='Fase 2' className='bg-violet-600'>
+        <Card title='CODI' subTitle='Fase 2' classCard='bg-violet-600' classTitle='text-gray-700' classSubTitle='text-gray-700'>
           <span slot="body" class="opacity-100"> <span class="font-bold">Cobro Digital</span>, es una plataforma de Banco de Mexico para facilitar las transacciones de pago y cobro
             a trav&eacute;s de transferencias electr&oacute;nicas, de forma r&aacute;pida, segura y eficiente,
             a trav&eacute;s de tel&eacutefonos m&oacuteviles.
@@ -39,7 +39,7 @@ import Card from '../components/Card.astro'
           </div>
         </Card>
         
-        <Card title='Portabilidad de Nomina' className='bg-pink-500'>
+        <Card title='Portabilidad de Nomina' classCard='bg-pink-500' classTitle='text-gray-700'>
           <span slot="body">Es para transferir tu sueldo, pension y otras prestaciones, desde la cuenta en la que 
             te depositan tu salario, al banco que prefieras
           </span>
@@ -52,7 +52,7 @@ import Card from '../components/Card.astro'
           </div>
         </Card>
 
-        <Card title='Ampliado' className='bg-rose-500'>
+        <Card title='Ampliado' classCard='bg-rose-500' classTitle='text-gray-700'>
           <span slot="body">
             Se creo un nuevo componente para la conexion con SPEI para las transferencias de CODI, esto involucro 
             crear replicar el funcionamiento de la recepcion e envio de la operacion actual
@@ -80,7 +80,7 @@ import Card from '../components/Card.astro'
           </div>
         </Card>
 
-        <Card title='CODI Notificacion' className='bg-orange-400'>
+        <Card title='CODI Notificacion' classCard='bg-orange-400' classTitle='text-gray-800'>
           <span slot="body">Se agrego la funcionalidad de enviar notificaciones al cliente cuando se realiza
             un transferencia de tipo de pago CODI para que el ordenante y beneficiario les llegara en la notificaciones 
           </span>

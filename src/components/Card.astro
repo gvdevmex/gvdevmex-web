@@ -3,15 +3,17 @@ interface Props {
 	title?: string;
 	subTitle?:string;
 	image?: string;
-	className?: string;
+	classCard?: string;
+	classTitle?: string;
+	classSubTitle?: string;
 }
 
-const { title, subTitle, image, className} = Astro.props;
+const { title, subTitle, image, classCard, classTitle, classSubTitle} = Astro.props;
 ---
 
 <div class:list={[
     "flex bg-gray-800 rounded-xl",
-    className,
+    classCard,
   ]}>
   <div class:list={[
   	{
@@ -23,8 +25,18 @@ const { title, subTitle, image, className} = Astro.props;
   </div>
   <div class="flex-auto p-6">
     <div class="flex">
-      <h1 class="flex-auto font-medium text-pink-400 text-3xl">{title}</h1>
-      <div class="text-lg font-medium text-cyan-400">{subTitle}</div>
+      <h1 class:list={[
+        "flex-auto font-medium text-pink-400 text-3xl ",
+        classTitle,
+        ]}>
+        {title}
+      </h1>
+      <div class:list={[
+        "text-lg font-medium text-cyan-400",
+        classSubTitle
+        ]}>
+        {subTitle}
+      </div>
     </div>
     <div class="flex mt-4 mb-6 pb-6 border-b border-amber-200 text-amber-100">
 	    <slot name="body"/>
